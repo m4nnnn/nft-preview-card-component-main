@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-family: Outfit;
+    height: 100vh;
+}
+
+main{ 
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.bloc-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.bloc-image img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.overlay img{
+    width: 40px;
+}
+
+
+
+.bloc-image:hover .overlay {
+    opacity: 1;
+}
+
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.info {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    text-align: left;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.ETH, .days-left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color:hsl(215, 51%, 70%);
+}
+
+.ETH{
+    color: hsl(178, 100%, 50%);
+}
+
+
+.bloc-image2{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top:20px; 
+}
+
+.bloc-image2 img{
+    width: 30px;
+}
+
+.name {
+    color: hsl(215, 51%, 70%) ;
+}
+
+.name span {
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+
+.name span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+h1:hover{
+    color:hsl(178, 100%, 50%);
+}
