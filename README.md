@@ -35,7 +35,6 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox for layout and icon alignment
 - CSS transitions for the image overlay effect
 
